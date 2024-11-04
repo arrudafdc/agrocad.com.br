@@ -1,22 +1,25 @@
-import logo from "../../assets/logo-seagri.png";
+import logoAgrocad from "../../assets/logo-agrocad.svg";
+import logoSeagri from "../../assets/logo-seagri.png";
 
 export function Login() {
   return (
     <div className="flex h-screen">
       {/* Seção esquerda com fundo verde */}
-      <div className="hidden md:flex w-1/2 bg-green-600  items-center justify-center">
-        <h1 className="text-white text-3xl font-bold">Bem-vindo ao AgroCad!</h1>
+      <div className="hidden md:flex w-1/2 bg-green-900  items-center justify-center">
+        <div className="flex items-center justify-center">
+          <img src={logoSeagri} className="w-72 h-auto" />
+        </div>
       </div>
 
       {/* Seção direita com o formulário de login */}
       <div className="w-full md:w-1/2 flex items-center justify-center">
         <div className="max-w-md w-full p-8 bg-white rounded">
           <div className="flex items-center justify-center mb-10">
-            <img src={logo} className="w-52 h-auto" />
+            <img src={logoAgrocad} className="" />
           </div>
 
           <h1 className="text-start text-3xl font-bold tracking-tighter">
-            Entre com sua conta
+            Bem-vindo ao AgroCad
           </h1>
           <p className="text-start text-gray-500 mb-6">
             Preencha os dados corretamente para fazer login
