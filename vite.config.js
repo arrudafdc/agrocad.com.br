@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === "production" ? "/agrocad.com.br/" : "/",
+  base: process.env.VITE_BASE_URL,
   resolve: {
     alias: {
       // eslint-disable-next-line no-undef
