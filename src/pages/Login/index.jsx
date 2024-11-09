@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import logoAgrocad from "../../assets/logo-agrocad.svg";
 import logoSeagri from "../../assets/logo-seagri.png";
 
@@ -47,12 +48,14 @@ export function Login() {
                 required
               />
             </div>
-            <button
-              type="submit"
-              className="w-full bg-primary text-white py-2 rounded hover:bg-green-700 mb-6"
-            >
-              Entrar
-            </button>
+            <NavLink to="/admin">
+              <button
+                type="submit"
+                className="w-full bg-primary text-white py-2 rounded hover:bg-green-700 mb-6"
+              >
+                Entrar
+              </button>
+            </NavLink>
             <div className="text-center text-sm">
               <a className="underline" href="#">
                 Esqueceu a senha?
