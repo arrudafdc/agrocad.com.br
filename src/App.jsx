@@ -10,7 +10,7 @@ import { UserRegister } from "./pages/Admin/Register/UserRegister";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/agrocad.com.br/">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/admin" element={<Admin />}>
